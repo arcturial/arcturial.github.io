@@ -5,7 +5,7 @@
 </a>
 <div class="container-fluid">
 
-    <section class="row" style="background-color: #212E3A; position: fixed; top: 0px; width: 100%; padding: 20px; z-index: 9999;">
+    <section class="row nav">
         <div class="text-center" style='width: 700px; margin: 0px auto;'>
             <nav class="navbar navbar-default">
                 <ul class="nav navbar-nav">
@@ -20,12 +20,10 @@
 
     <section class="row" style="background-color: #212E3A;" id="top">
         <div class="text-center" style='width: 700px; margin: 0px auto; padding-top: 60px;'>
-            <img src="profile.jpg" class="img-circle" width="300" />
-
-            <h1>Chris Brand</h1>
-
+            <img src="https://s.gravatar.com/avatar/ea3ca2e73f7abf90d7d975bf8c65f8e8?s=300" class="img-circle" width="300" />
+            <h1>{{ site.title }}</h1>
             <p>
-                Coveralls works with your continuous integration server to give you test coverage history and statistics. Free for open source, pro accounts for private repos, instant sign up with GitHub OAuth.
+                {{ content }}
             </p>
 
             <div>
