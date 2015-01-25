@@ -1,8 +1,6 @@
 title:          "Your awesome title"
-email:          "your-email@domain.com"
 description:    ""
 baseurl:        ""
-url:            "http://yourdomain.com"
 markdown:       kramdown
 source:         ./_source/
 destination:    ./_site/
