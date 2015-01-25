@@ -2,5 +2,4 @@ title:          "Your awesome title"
 description:    ""
 baseurl:        ""
 markdown:       kramdown
-source:         ./_source/
 destination:    ./_site/
