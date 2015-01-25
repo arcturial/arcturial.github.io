@@ -2,6 +2,7 @@
 ---
 
 $dark-blue: #212E3A;
+$font: "Open Sans";
 
 .nav-section
 {
@@ -36,3 +37,46 @@ $dark-blue: #212E3A;
     }
 }
 
+.main-section
+{
+    background-color: $dark-blue;
+}
+
+.img-pp
+{
+    border: 6px solid #ffffff;
+}
+
+h1
+{
+    font-family: $font;
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 600;
+    text-shadow: 3px 3px 0px #222F37;
+}
+
+h2
+{
+    font-family: $font;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+h3,
+h3 a
+{
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 300;
+    margin: 0px;
+    padding: 0px;
+}
+
+p
+{
+    font-family: $font;
+    color: #FFFDFA;
+}
