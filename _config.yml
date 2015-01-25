@@ -4,5 +4,5 @@ description:    ""
 baseurl:        ""
 url:            "http://yourdomain.com"
 markdown:       kramdown
-source:         ./src/
-destination:    ./public/
+source:         ./_source/
+destination:    ./_site/
