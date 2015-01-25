@@ -1,5 +1,10 @@
-title:          "Chris Brand"
-description:    ""
-baseurl:        ""
-markdown:       kramdown
-destination:    ./_site/
+baseurl: ""
+destination: "./_site/"
+
+title: "Chris Brand"
+description: ""
+
+markdown: kramdown
+
+sass:
+    style: :compressed
