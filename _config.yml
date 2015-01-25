@@ -2,7 +2,7 @@ baseurl: ""
 destination: "./_site/"
 
 title: "Chris Brand"
-description: ""
+description: "My name is Chris Brand (aka. Arcturial); I am a software developer, gamer and aspiring game designer from South Africa."
 
 markdown: kramdown
 
