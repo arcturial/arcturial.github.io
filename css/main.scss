@@ -45,6 +45,13 @@ section
 .main-section
 {
     background-color: $dark-blue;
+
+    > div
+    {
+        width: 700px;
+        margin: 0px auto;
+        padding-top: 60px;
+    }
 }
 
 .img-pp
