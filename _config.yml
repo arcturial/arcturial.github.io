@@ -1,10 +1,14 @@
-baseurl: ""
-destination: "./_site/"
-
-title: "Chris Brand"
-description: "My name is Chris Brand (aka. Arcturial); I am a software developer, gamer and aspiring game designer from South Africa."
-
+paginate: 10
+paginate_path: "page:num"
+exclude: [ "README.md" ]
+highlighter: pygments
 markdown: kramdown
 
-sass:
-    style: :compressed
+title: Chris Brand
+author: Chris Brand
+tagline: "Software Developer / Creator"
+description: "My name is Chris Brand (aka. Arcturial); I am a software developer, gamer and aspiring game designer from South Africa."
+
+linkedin: https://za.linkedin.com/in/arcturial
+github: https://arcturial.github.com/
+twitter: https://twitter.com/Arcturial

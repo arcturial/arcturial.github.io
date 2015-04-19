@@ -1,115 +1,207 @@
 ---
 ---
 
-$dark-blue: #212E3A;
-$font: "Open Sans";
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:500&subset=latin,latin-ext);
+
+$font: "Ubuntu";
+
+$dark-red: #D47A6A;
+$medium-red: #AA4B39;
+$red: #FFB7AA;
+
+$blue: #2C3E50;
+$light-blue: #457585;
+$light-light-blue: #6C929F;
+
+$green: #4C7513;
+$dark-green: #2D4E00;
 
 body
 {
-    position: relative;
+    background-color: $blue;
 }
 
-section
+a
 {
-    padding: 50px;
+    color: $green;
 }
 
-.nav-section
+a:hover
 {
-    background-color: $dark-blue;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    padding: 20px;
-    z-index: 9999;
-
-    .navbar
-    {
-        background-color: transparent;
-        border: none;
-        border-radius: 0px;
-        width: auto;
-        display: inline-block;
-        margin: 0px auto;
-
-        .nav.navbar-nav li a
-        {
-            color: #fff;
-            font-size: 20px;
-        }
-
-        .nav.navbar-nav li.active a
-        {
-            color: #fff;
-            background-color: transparent;
-            border-bottom: 4px solid #D9534F;
-        }
-    }
-}
-
-.main-section
-{
-    background-color: $dark-blue;
-
-    > div
-    {
-        width: 700px;
-        margin: 0px auto;
-        padding-top: 60px;
-    }
-}
-
-.button-up
-{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    background-color: $dark-blue;
-    color: #D9534F;
-    font-size: 22px;
-    line-height: 42px;
-    text-align: center;
-    cursor: pointer;
+    color: $dark-green;
 }
 
 .img-pp
 {
-    border: 6px solid #ffffff;
+    border: 6px solid $dark-red;
+    width: 200px;
+    height: 200px;
 }
 
-h1
+.sidebar
+{
+    background-color: $blue !important;
+    color: #fff !important;
+    position: fixed;
+    top: 0px;
+    padding-top: 6%;
+}
+
+.bio
 {
     font-family: $font;
-    color: #ffffff;
-    font-size: 48px;
-    font-weight: 600;
-    text-shadow: 3px 3px 0px #222F37;
+    font-size: 16px;
 }
 
+article.home h1 a,
+article.home h2 a,
+article.home h3 a,
+article.home h1,
+article.home h2,
+h1,
 h2
 {
     font-family: $font;
-    color: #ffffff;
-    font-size: 40px;
-    font-weight: 600;
+    position: relative;
+    color: $dark-red !important;
+    font-weight: bold;
 }
 
-h3,
-h3 a
+article.home h3 a,
+article.home h3,
+h3
 {
-    font-family: Arial;
-    color: #ffffff;
-    font-size: 26px;
-    font-weight: 300;
+    font-size: 24px;
+    font-weight: normal !important;
+    color: $medium-red !important;
+}
+
+article.home h2 a:before
+{
+    content: "#";
+    margin-left: -25px;
+    position: absolute;
+    font-size: 28px;
+    top: 2px;
+    color: $red;
+    opacity: 0.6;
+}
+
+.page-header
+{
     margin: 0px;
-    padding: 0px;
 }
 
-p
+.page-header h1
 {
-    font-family: $font;
-    color: #FFFDFA;
+    margin-left: 28px;
+}
+
+.page-header h1:before
+{
+    content: "#";
+    margin-left: -28px;
+    position: absolute;
+    font-size: 28px;
+    top: 5px;
+    color: $red;
+    opacity: 0.6;
+}
+
+.post-date
+{
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+.social-link
+{
+    color: $dark-red;
+    font-size: 40px;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+.social-link:hover
+{
+    color: #55acee;
+}
+
+.default-content
+{
+    background-color: #ffffff !important;
+    padding: 60px;
+}
+
+article
+{
+    padding: 2% !important;
+    margin-bottom: 40px;
+}
+
+.highlight pre
+{
+    background-color: #333333 !important;
+    border-radius: 0px !important;
+    border: none !important;
+    padding: 8px !important;
+    color: #ffffff !important;
+}
+
+.highlight pre code .lineno
+{
+    background-color: #444444 !important;
+    color: #999 !important;
+    width: 30px;
+    text-align: center;
+}
+
+.highlight pre code *
+{
+    display: inline-block;
+    padding: 0px !important;
+    line-height: 22px !important;
+}
+
+.pager li > a,
+.pager li > span
+{
+    border: none !important;
+}
+
+.sidebar-header
+{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sidebar-header .title
+{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.sidebar-header .title a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar-header a
+{
+    color: #fff;
+}
+
+#bio
+{
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
+    margin: 0px auto 10px;
+}
+
+.article_body
+{
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
