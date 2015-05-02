@@ -13,6 +13,7 @@ I created this PHP library to make it easier to integrate and easily switch prot
 This library uses [composer](http://www.getcomposer.org/) and can be acquired using the following in your `composer.json` file.
 
 {% highlight php linenos %}
+<?php
 {
     "require": {
         "arcturial/clickatell": "*"
@@ -25,6 +26,7 @@ This library uses [composer](http://www.getcomposer.org/) and can be acquired us
 The Clickatell library allows you specify several ways to connect to Clickatell. The current ones supported are HTTP and XML. These connections are called ‘Transports’. The default transport is **HTTP**.
 
 {% highlight php linenos %}
+<?php
 $clickatell = new Clickatell($username, $password, $apiID);
 $clickatell->sendMessage(array(1111111111), 'My Message');
 {% endhighlight %}
@@ -32,6 +34,7 @@ $clickatell->sendMessage(array(1111111111), 'My Message');
 You can specify a different output using the Clickatell constructor or using the `setTransport()` method.
 
 {% highlight php linenos %}
+<?php
 $clickatell = new Clickatell(
     $username,
     password,
@@ -65,6 +68,7 @@ The following are all messaging API’s.
 These Transports all support the following functions
 
 {% highlight php linenos %}
+<?php
 sendMessage(array $to, string $message, $from = "", $callback = true);
 getBalance();
 queryMessage($apiMsgId);
@@ -81,6 +85,7 @@ The following are bulk messaging API’s. The have only a limited number of func
 These Transports all support the following functions
 
 {% highlight php linenos %}
+<?php
 sendMessage(array $to, string $message, $from = "", $callback = true);
 {% endhighlight %}
 
@@ -91,6 +96,7 @@ This library provides a couple of events to extend the ability of the API’s. C
 Example:
 
 {% highlight php linenos %}
+<?php
 use ClickatellClickatell;
 
 $clickatell = new Clickatell('[username]', '[password]', [api_id], Clickatell::HTTP_API);
