@@ -14,7 +14,8 @@ Hopefully this isn’t the last game that will be posted. Enjoy...
     <div id="unityPlayer" style="position: absolute; height: 100%; width: 100%; top: 0px; left: 0px;"></div>
 </div>
 
-<script type="text/javascript" src="http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js">
+<script type="text/javascript" src="http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js"></script>
+<script type="text/javascript">
     var u = new UnityObject2();
-    u.initPlugin(document.getElementById("#unityPlayer"), "http://arcturial.github.io/downloads/Space_Shooter.unity3d");
+    u.initPlugin(document.getElementById("unityPlayer"), "http://arcturial.github.io/downloads/Space_Shooter.unity3d");
 </script>
