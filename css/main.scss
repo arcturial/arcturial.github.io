@@ -25,6 +25,7 @@ body
 a
 {
     color: $green;
+    transition: color 0.1s ease-in 0s;
 }
 
 a:hover
@@ -221,9 +222,12 @@ article
     cursor: pointer;
     font-size: 12px;
     margin-left: 2px;
+    transition: background-color 0.1s ease-in 0s;
 }
 
 .tag:hover
 {
     background-color: $green !important;
+    color: #ffffff;
+    text-decoration: none;
 }
