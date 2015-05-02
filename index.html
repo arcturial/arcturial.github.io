@@ -38,41 +38,5 @@ layout: default
 
 </article>
 {% endfor %}
-<hr/>
 
-<ul class="pager">
-
-    {% if paginator.previous_page %}
-    <li class="previous">
-        {% if paginator.previous_page == 1 %}
-        <a href="{{ site.site_url }}/">
-            <i class="fa fa-chevron-left fa-2x"></i>
-        </a>
-        {% else %}
-        <a href="{{ site.site_url }}/{{ site.paginate_path | replace: ':num', paginator.previous_page }}">
-            <i class="fa fa-chevron-left fa-2x"></i>
-        </a>
-        {% endif %}
-    </li>
-    {% else %}
-    <li class="previous disabled">
-        <a><i class="fa fa-chevron-left fa-2x"></i></a>
-    </li>
-    {% endif %}
-
-    <li>
-        <span class="page_number">{{ paginator.page }} of {{ paginator.total_pages }}</span>
-    </li>
-
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ site.site_url }}/{{ site.paginate_path | replace: ':num', paginator.next_page }}">
-            <i class="fa fa-chevron-right fa-2x"></i>
-        </a>
-    </li>
-    {% else %}
-    <li class="next disabled">
-        <a><i class="fa fa-chevron-right fa-2x"></i></a>
-    </li>
-    {% endif %}
-</ul>
+{% include pager.html %}
