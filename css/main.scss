@@ -5,9 +5,10 @@
 
 $font: "Ubuntu";
 
-$dark-red: #D47A6A;
+$dark-red: #F4645F;
+$red: #F4645F;
 $medium-red: #AA4B39;
-$red: #FFB7AA;
+$dark-grey: #525252;
 
 $blue: #2C3E50;
 $light-blue: #457585;
@@ -64,7 +65,13 @@ h2
     font-family: $font;
     position: relative;
     color: $dark-red !important;
-    font-weight: bold;
+    font-weight: normal;
+}
+
+h2
+{
+    font-weight: normal;
+    color: $dark-grey !important;
 }
 
 article.home h3 a,
