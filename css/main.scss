@@ -256,3 +256,26 @@ article
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
+.videowrapper
+{
+    float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0px;
+    margin-top: 30px;
+}
+
+.videowrapper iframe
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #DEDEDE;
+    padding: 5px;
+}
