@@ -16,11 +16,12 @@ In this article, I provide some insight about how I wrote the [Mock.js](http://s
 
 First off, we have to include the mock library in our code.
 
-    <html>
-        <head>
-        <script type="text/javascript" src="mock.js"></script>
-        </head>
-
+{% highlight html linenos %}
+<html>
+    <head>
+    <script type="text/javascript" src="mock.js"></script>
+    </head>
+{% endhighlight %}
 
 
 The objective of this test is to log the result of an object that writes to disk. We want to test the ability of the `Logger` object to be able to accept a `FileSystem` result object and log it “somewhere”.
@@ -31,23 +32,23 @@ One way we can solve this problem is by **“faking”** the `write` function an
 
 We know what the result of a successful `write` call should be. So is there not a way we can just tell the logger what it’s about to receive as input?
 
-    <body>
-        <div id="qunit"></div>
-        <div id="qunit-fixture"></div>
+{% highlight html linenos %}
+<body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
 
-        <script>
-            test("test write to file", function() {
-                var filesys = new FileSystem();
+    <script>
+        test("test write to file", function() {
+            var filesys = new FileSystem();
 
-                var result = filesys.write('file.txt', 'content');
-                var logResult = Logger.log(result);
+            var result = filesys.write('file.txt', 'content');
+            var logResult = Logger.log(result);
 
-                ok(logResult , 'done logging');
-            }
-        </script>
-    </body>
-
-
+            ok(logResult , 'done logging');
+        }
+    </script>
+</body>
+{% endhighlight %}
 
 Using a `Mock.Spy`, we can tell the `FileSystem` object to stop it’s execution and return a specific result when the mocked function is called (in this case, the `write` function). Using `consume()`, we tell the `FileSystem` to always return **true** when the `write()` function is called.
 
@@ -65,21 +66,23 @@ Some libraries opt for using the Javascript object prototype to change the way a
 
 The way I created [Mock.js](https://github.com/arcturial/mock.js) was to override the current instance of an object and replace it’s “mocked” methods with a “tracker” that changes the behavior of a method or tracks when a method is executed.
 
-    var context = this;
-    var obj = [object to mock];
+{% highlight javascript linenos %}
+var context = this;
+var obj = [object to mock];
 
-    // Keep track of the current method functionality
-    var functionCont = obj[method];
+// Keep track of the current method functionality
+var functionCont = obj[method];
 
-    // Now we override the method and attach a tracket
-    obj[method] = function()
-    {
-        // Register the action on the tracker
-        context.track.callCount++;
+// Now we override the method and attach a tracket
+obj[method] = function()
+{
+    // Register the action on the tracker
+    context.track.callCount++;
 
-        // Invoke original method
-        context.functionCont.apply(obj, arguments);
-    );
+    // Invoke original method
+    context.functionCont.apply(obj, arguments);
+);
+{% endhighlight %}
 
 What this piece of code does, is it takes a current object instance and stored a certain methods functionality in a new variable. The method is then overwritten with a new function that increments our call counter. Then, we execute the original method (this can be changed if an object has been consumed).
 
