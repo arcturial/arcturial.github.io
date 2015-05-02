@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Design Pattern: PHP Event Dispatcher
+title: Design Pattern - PHP Event Dispatcher
 fullview: true
 ---
 
