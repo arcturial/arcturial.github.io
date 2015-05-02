@@ -1,2 +1,11 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js"></script>
+
+<script type="text/javascript">
+var u = new UnityObject2();
+
+$("[data-unity]").each(function () {
+    u.initPlugin($(this), $(this).attr("data-unity"));
+});
+</script>
