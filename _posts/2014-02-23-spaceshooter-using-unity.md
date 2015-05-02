@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Callback Support For Clickatell PHP Library
+title: Space Shooter Using Unity 3D
 fullview: true
 ---
 
@@ -10,17 +10,9 @@ I followed a tutorial for creating a [Space Shooter with Unity 3D](http://unity3
 
 Hopefully this isn’t the last game that will be posted. Enjoy...
 
-<script type="text/javascript">
-<!--
-var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
-if (document.location.protocol == 'https:')
-    unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
-document.write('<script type="text/javascript" src="' + unityObjectUrl + '"></script>');
--->
-</script>
 <script type="text/javascript" src="http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js"></script>
 <div class="videowrapper">
-<div id="unityPlayer" style="position: absolute; height: 100%; width: 100%; top: 0px; left: 0px;"><embed style="display: block; width: 100%; height: 100%;" firstframecallback="UnityObject2.instances[0].firstFrameCallback();" type="application/vnd.unity" src="http://www.cainsvault.com/wordpress/wp-content/uploads/other/Space_Shooter/Space_Shooter.unity3d" height="100%" width="100%"></div>
+    <div id="unityPlayer" style="position: absolute; height: 100%; width: 100%; top: 0px; left: 0px;"></div>
 </div>
 <script type="text/javascript">
 $(document).ready(function() {
