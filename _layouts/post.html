@@ -30,7 +30,7 @@ layout: default
             {% for tag in tags_list %}
             <li>
                 <a class="tag" href="{{ site.BASE_PATH }}/{{ site.tags_path }}#{{ tag[0] }}-ref">
-                    {{ tag[0] }} <span>({{ tag[1].size }})</span>
+                    {{ tag }}
                 </a>
             </li>
             {% endfor %}
