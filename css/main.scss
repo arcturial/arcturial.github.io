@@ -68,20 +68,13 @@ h2
     font-weight: normal;
 }
 
-article.home h3,
-h3
-{
-    font-weight: normal;
-    color: $dark-grey !important;
-}
-
 article.home h3 a,
 article.home h3,
 h3
 {
     font-size: 24px;
     font-weight: normal !important;
-    color: $medium-red !important;
+    color: $dark-grey !important;
 }
 
 article.home h2 a:before
