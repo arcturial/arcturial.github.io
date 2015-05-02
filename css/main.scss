@@ -5,9 +5,9 @@
 
 $font: "Ubuntu";
 
-$dark-red: #F4645F;
-$red: #F4645F;
+$dark-red: #D47A6A;
 $medium-red: #AA4B39;
+$red: #FFB7AA;
 $dark-grey: #525252;
 
 $blue: #2C3E50;
@@ -68,7 +68,8 @@ h2
     font-weight: normal;
 }
 
-h2
+article.home h3,
+h3
 {
     font-weight: normal;
     color: $dark-grey !important;
