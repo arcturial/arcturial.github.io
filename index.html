@@ -23,11 +23,7 @@ layout: default
     </h2>
 
     <div>
-        {% if post.fullview %}
-            {{ post.content }}
-        {% else %}
-            {{ post.excerpt }}
-        {% endif %}
+        {{ post.excerpt }}
     </div>
 
 </article>

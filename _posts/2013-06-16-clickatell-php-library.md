@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Clickatell PHP Library
-fullview: true
 ---
 
 [Clickatell](http://www.clickatell.com) offers quite a few API’s to help developers integrate with their SMS gateway. The only problem I found, was that the different protocols tend to behave differently.

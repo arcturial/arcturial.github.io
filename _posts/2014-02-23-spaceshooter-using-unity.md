@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Space Shooter Using Unity 3D
-fullview: true
 ---
 
 Wanting to create a game for a while now, I never knew where to start. Finally I decided to just take some tutorials and work through them.

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: How To Avoid Arduino Resetting Due To Current Loss
-fullview: true
 ---
 
 I recently ran into a problem with my [Arduino powered remote control car](https://www.youtube.com/watch?v=LqzbRwjU4dE), the motors would pull too much current and reset the Arduino. Unfortunately, the space I had on the RC car was limited and I had to make due with a **2200mah** battery that didn’t have enough juice to power the motors and the Arduino. After doing some research and trying a few different techniques, I realized that it would be much easier to just have the motor run on it’s own battery before it causes damage to the Arduino. However, before I came to this conclusion…I tried a technique called **power supply decoupling**. I had some success with this, but unfortunately for long running high current components like DC motors…it’s just not good enough. Decoupling the power supply helps to introduce a more stable flow of current. Without decoupling, your components might be wired like this:

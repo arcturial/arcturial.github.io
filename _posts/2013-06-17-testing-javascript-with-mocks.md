@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Testing Javascript With Mock Objects And Spies
-fullview: true
 ---
 
 One of the biggest problem we are confronted with when writing tests, is the inability to isolate certain pieces of code. This makes the tests less valuable, as we don’t know which piece of code might be causing a test to fail.

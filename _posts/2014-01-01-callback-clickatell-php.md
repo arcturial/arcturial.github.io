@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Callback Support For Clickatell PHP Library
-fullview: true
 ---
 
 I recently updated the [Clickatell PHP Library](https://github.com/arcturial/clickatell) with added support for MT callbacks (tag 1.0.1). In order to utilize it, you can register a closure callback with the Clickatell library using `Clickatell::parseCallback();`.
