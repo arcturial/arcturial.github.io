@@ -20,6 +20,7 @@ $dark-green: #2D4E00;
 body
 {
     background-color: $blue;
+    line-height: 24px !important;
 }
 
 a
@@ -81,6 +82,19 @@ h3
     font-size: 24px;
     font-weight: normal !important;
     color: $dark-grey !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+article.home h4 a,
+article.home h4,
+h4
+{
+    font-size: 20px;
+    font-weight: normal !important;
+    color: $dark-grey !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 article.home h2 a:before
@@ -235,4 +249,10 @@ article
     background-color: $green !important;
     color: #ffffff;
     text-decoration: none;
+}
+
+.highlight
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
