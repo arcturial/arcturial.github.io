@@ -2,7 +2,7 @@
 layout: post
 title: Clickatell PHP Library
 description: I created this PHP library to make it easier to integrate and easily switch protocols (types of API’s). Using this library you can easily go from using the HTTP API to using the XML API (or other) with almost no code modification required.
-old_url: {{ site.url }}{{ post.url }}
+old_url: http://www.cainsvault.com/callback-support-clickatell-php-library/
 ---
 
 [Clickatell](http://www.clickatell.com) offers quite a few API’s to help developers integrate with their SMS gateway. The only problem I found, was that the different protocols tend to behave differently.
