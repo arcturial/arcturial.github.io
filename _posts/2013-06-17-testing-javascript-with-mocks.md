@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Testing Javascript With Mock Objects And Spies
+description: In this article, I provide some insight about how I wrote the Mock.js, a lightweight Javascript mocking library, and how to go about using it in a test environment.
 ---
 
 One of the biggest problem we are confronted with when writing tests, is the inability to isolate certain pieces of code. This makes the tests less valuable, as we don’t know which piece of code might be causing a test to fail.
@@ -9,7 +10,7 @@ This problem has been solved by introducing mock objects into the code. There ar
 
 When I first started browsing around for Javascript testing frameworks, mock objects were high on my list of requirements. I tested a couple of them and then decided I want to create my own. One of my reasons were to familiarize myself with how these libraries utilize Javascript and prototypes to “fake” or “track” certain method calls.
 
-In this article, I provide some insight about how I wrote the [Mock.js](http://sinonjs.org/) (a lightweight Javascript mocking library) and how to go about using it in a test environment.
+In this article, I provide some insight about how I wrote the [Mock.js](https://github.com/arcturial/mock.js) (a lightweight Javascript mocking library) and how to go about using it in a test environment.
 
 ### Getting Started
 
