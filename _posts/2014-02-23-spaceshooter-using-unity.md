@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Space Shooter Using Unity 3D
+old_url: http://www.cainsvault.com/space-shooter-unity-3d/
 ---
 
 Wanting to create a game for a while now, I never knew where to start. Finally I decided to just take some tutorials and work through them.
