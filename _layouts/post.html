@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="page-header">
-    <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
+    <h1>{{ page.title }} {% if page.tagline %}<small>{{ page.tagline }}</small>{% endif %}</h1>
 </div>
 
 <article>
@@ -27,7 +27,7 @@ layout: default
 </article>
 <div class="clearfix"></div>
 
-<div class="fb-like" data-href="{% if post.old_url %}{{ post.old_url }}{% else %}{{ site.url }}{{ post.url }}{% endif %}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
-<a href="{% if post.old_url %}{{ post.old_url }}{% else %}{{ site.url }}{{ post.url }}{% endif %}" class="twitter-share-button" data-via="Arcturial">Tweet</a>
+<div class="fb-like" data-href="{% if page.old_url %}{{ page.old_url }}{% else %}{{ site.url }}{{ page.url }}{% endif %}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+<a href="{% if page.old_url %}{{ page.old_url }}{% else %}{{ site.url }}{{ page.url }}{% endif %}" class="twitter-share-button" data-via="Arcturial">Tweet</a>
 
 {% include pager.html %}
