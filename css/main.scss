@@ -5,17 +5,11 @@
 
 $font: "Ubuntu";
 
-$dark-red: #D47A6A;
-$medium-red: #AA4B39;
-$red: #FFB7AA;
+$blue: #2c3e50;
+
+$dark-red: #56799D;
+$red: #496684;
 $dark-grey: #525252;
-
-$blue: #2C3E50;
-$light-blue: #457585;
-$light-light-blue: #6C929F;
-
-$green: #4C7513;
-$dark-green: #2D4E00;
 
 body
 {
@@ -25,13 +19,13 @@ body
 
 a
 {
-    color: $green;
+    color: $red;
     transition: color 0.1s ease-in 0s;
 }
 
 a:hover
 {
-    color: $dark-green;
+    color: $red;
 }
 
 .img-pp
@@ -246,7 +240,7 @@ article
 
 .tag:hover
 {
-    background-color: $green !important;
+    background-color: $red !important;
     color: #ffffff;
     text-decoration: none;
 }
