@@ -6,9 +6,8 @@
 $font: "Ubuntu";
 
 $blue: #2c3e50;
-
-$dark-red: #56799D;
-$red: #496684;
+$blue-link: #496684;
+$blue-social: #56799D;
 $dark-grey: #525252;
 
 body
@@ -19,18 +18,18 @@ body
 
 a
 {
-    color: $red;
+    color: $blue-link;
     transition: color 0.1s ease-in 0s;
 }
 
 a:hover
 {
-    color: $red;
+    color: $blue-link;
 }
 
 .img-pp
 {
-    border: 6px solid $dark-red;
+    border: 6px solid $blue-social;
     width: 200px;
     height: 200px;
 }
@@ -98,7 +97,7 @@ article.home h2 a:before
     position: absolute;
     font-size: 28px;
     top: 2px;
-    color: $red;
+    color: $blue-link;
     opacity: 0.6;
 }
 
@@ -119,7 +118,7 @@ article.home h2 a:before
     position: absolute;
     font-size: 28px;
     top: 5px;
-    color: $red;
+    color: $blue-link;
     opacity: 0.6;
 }
 
@@ -132,7 +131,7 @@ article.home h2 a:before
 
 .social-link
 {
-    color: $dark-red;
+    color: $blue-social;
     font-size: 40px;
     -webkit-transition: color 0.5s;
     transition: color 0.5s;
@@ -240,7 +239,7 @@ article
 
 .tag:hover
 {
-    background-color: $red !important;
+    background-color: $blue-link !important;
     color: #ffffff;
     text-decoration: none;
 }
