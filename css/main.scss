@@ -394,18 +394,6 @@ article
 .highlight .si,.highlight .sx,.highlight .sr,.highlight .s1,.highlight .ss { color:#e6db74 !important; }
 .highlight .na,.highlight .nc,.highlight .nd,.highlight .ne,.highlight .nf,.highlight .nx { color:#a6e22e !important; }
 
-#disqus_thread
-{
-    height: 0px;
-    overflow: hidden !important;
-    -webkit-transform: translate3d(0, 0, 0);
-   -moz-transform: translate3d(0, 0, 0);
-   -ms-transform: translate3d(0, 0, 0);
-   transform: translate3d(0, 0, 0);
-    -webkit-transition: height 1s;
-    transition: height 1s;
-}
-
 @media screen and (max-width: 767px) {
     .default-content
     {
