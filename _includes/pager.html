@@ -2,9 +2,9 @@
 
 <hr>
 <ul class="pager">
-    {% if page.previous %}
+    {% if paginator.previous_page %}
     <li class="previous">
-        <a href="{{ site.url }}{{ page.previous.url }}" title="{{ page.previous.title }}">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="{{ page.previous.title }}">
             <i class="fa fa-chevron-left" style='margin-right: 10px;'></i>{{ page.previous.title }}
         </a>
     </li>
