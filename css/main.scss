@@ -155,6 +155,11 @@ article
     margin-bottom: 40px;
 }
 
+.highlight pre code
+{
+    min-width: 500px !important;
+}
+
 .highlight pre
 {
     background-color: #333333 !important;
