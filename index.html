@@ -19,17 +19,14 @@ layout: default
     </span>
 
     <h2>
-        <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </h2>
 
     <div>
         {{ post.excerpt }}
     </div>
 
-    <span class="disqus-comment-count" data-disqus-url="{% if page.old_url %}{{ page.old_url }}{% else %}{{ site.baseurl }}{{ page.url }}{% endif %}">
-        &nbsp;
-    </span>
-
+    <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread">{{ post.title }}
 </article>
 {% endfor %}
 <hr/>
