@@ -50,6 +50,18 @@ a:hover
     font-size: 16px;
 }
 
+.navbar
+{
+    margin-bottom: 0px !important;
+    background-color: $blue;
+}
+
+.navbar .navbar-header .navbar-brand
+{
+    text-transform: uppercase !important;
+    color: #ffffff;
+}
+
 article.home h1 a,
 article.home h2 a,
 article.home h3 a,
