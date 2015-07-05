@@ -10,6 +10,7 @@ markdown: kramdown
 title: Chris Brand
 author: Chris Brand
 tagline: "Software Developer / Creator"
+baseurl: http://www.chrisbrand.co.za
 description: "My name is Chris Brand (aka. Arcturial); I am a software developer, gamer and aspiring game designer from South Africa."
 
 linkedin: https://za.linkedin.com/in/arcturial
