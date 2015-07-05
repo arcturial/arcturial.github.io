@@ -34,12 +34,12 @@ layout: default
 
     {% if paginator.previous_page %}
     <li class="previous">
-        {% paginator.page == 2 %}
+        {% paginator.previous_page == 2 %}
         <a href="{{ site.baseurl }}">
             <i class="fa fa-fw fa-chevron-left fa-2x"></i>
         </a>
         {% else %}
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+        <a href="{{ site.baseurl }}/{{ site.paginate_path | replace: ':num', paginator.previous_page }}">
             <i class="fa fa-fw fa-chevron-left fa-2x"></i>
         </a>
         {% endif %}
@@ -52,7 +52,7 @@ layout: default
 
     {% if paginator.next_page %}
     <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+        <a href="{{ site.baseurl }}/{{ site.paginate_path | replace: ':num', paginator.next_page }}">
             <i class="fa fa-fw fa-chevron-right fa-2x"></i>
         </a>
     </li>
