@@ -26,6 +26,10 @@ layout: default
         {{ post.excerpt }}
     </div>
 
+    <span class="disqus-comment-count" data-disqus-url="{% if page.old_url %}{{ page.old_url }}{% else %}{{ site.baseurl }}{{ page.url }}{% endif %}">
+        &nbsp;
+    </span>
+
 </article>
 {% endfor %}
 <hr/>
