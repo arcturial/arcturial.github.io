@@ -30,6 +30,7 @@ layout: default
 <div class="fb-like" data-href="{% if page.old_url %}{{ page.old_url }}{% else %}{{ site.baseurl }}{{ page.url }}{% endif %}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
 <a href="https://twitter.com/share" data-url="{% if page.old_url %}{{ page.old_url }}{% else %}{{ site.baseurl }}{{ page.url }}{% endif %}" class="twitter-share-button" data-via="Arcturial">Tweet</a>
 
+<hr>
 <div id="disqus_thread"></div>
 
 {% include pager.html %}
