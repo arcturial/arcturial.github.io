@@ -56,6 +56,12 @@ a:hover
     background-color: $blue;
 }
 
+.navbar ul
+{
+    padding-top: 5px !important;
+    margin: 0px !important;
+}
+
 .navbar .navbar-header .navbar-brand
 {
     text-transform: uppercase !important;
@@ -386,3 +392,10 @@ article
 .highlight .ld,.highlight .s,.highlight .sb,.highlight .sc,.highlight .sd,.highlight .s2,.highlight .sh,
 .highlight .si,.highlight .sx,.highlight .sr,.highlight .s1,.highlight .ss { color:#e6db74 !important; }
 .highlight .na,.highlight .nc,.highlight .nd,.highlight .ne,.highlight .nf,.highlight .nx { color:#a6e22e !important; }
+
+@media screen and (max-width: 480px) {
+    .default-content
+    {
+        padding: 20px !important;
+    }
+}
