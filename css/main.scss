@@ -396,7 +396,13 @@ article
 
 #disqus_thread
 {
-    display: none;
+    height: 0px;
+    -webkit-transform: translate3d(0, 0, 0);
+   -moz-transform: translate3d(0, 0, 0);
+   -ms-transform: translate3d(0, 0, 0);
+   transform: translate3d(0, 0, 0);
+    -webkit-transition: height 2s;
+    transition: height 2s;
 }
 
 @media screen and (max-width: 767px) {
