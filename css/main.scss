@@ -402,8 +402,8 @@ article
    -moz-transform: translate3d(0, 0, 0);
    -ms-transform: translate3d(0, 0, 0);
    transform: translate3d(0, 0, 0);
-    -webkit-transition: height 2s;
-    transition: height 2s;
+    -webkit-transition: height 1s;
+    transition: height 1s;
 }
 
 @media screen and (max-width: 767px) {
