@@ -58,7 +58,7 @@ a:hover
 
 .navbar ul
 {
-    padding-top: 5px !important;
+    padding-top: 9px !important;
     margin-bottom: 0px !important;
     margin-right: 5px !important;
 }
@@ -398,5 +398,10 @@ article
     .default-content
     {
         padding: 20px !important;
+    }
+
+    .social-link
+    {
+        font-size: 30px !important;
     }
 }
