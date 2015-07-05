@@ -11,12 +11,13 @@
         </div>
     </nav>
 
-    <div class="col-sm-3 sidebar hidden-xs">
-        {% include sidebar.html %}
-    </div>
-
-    <div class="col-sm-9 col-sm-offset-3 default-content">
-        {{ content }}
+    <div class="row">
+        <div class="col-md-3 sidebar">
+            {% include sidebar.html %}
+        </div>
+        <div class="col-md-9 default-content">
+            {{ content }}
+        </div>
     </div>
 
     {% include footer.html %}
