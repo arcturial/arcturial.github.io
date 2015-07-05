@@ -5,7 +5,8 @@
     {% if page.previous %}
     <li class="previous">
         <a href="{{ site.url }}{{ page.previous.url }}" title="{{ page.previous.title }}">
-            <i class="fa fa-chevron-left" style='margin-right: 10px;'></i>{{ page.previous.title }}
+            <span class="visible-xs"><i class="fa fa-fw fa-chevron-right"></i>&nbsp;Previous</span>
+            <span class="hidden-xs"><i class="fa fa-fw fa-chevron-left"></i>&nbsp;{{ page.previous.title }}</span>
         </a>
     </li>
     {% endif %}
@@ -13,7 +14,8 @@
     {% if page.next %}
     <li class="next">
         <a href="{{ site.url }}{{ page.next.url }}" title="{{ page.next.title }}">
-            {{ page.next.title }}<i class="fa fa-chevron-right" style="margin-left: 10px;"></i>
+            <span class="visible-xs">Next&nbsp;<i class="fa fa-fw fa-chevron-right"></i></span>
+            <span class="hidden-xs">{{ page.next.title }}&nbsp;<i class="fa fa-fw fa-chevron-right"></i></span>
         </a>
     </li>
     {% endif %}
