@@ -34,6 +34,7 @@ if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.t
 // called by disqus
 function disqus_config() {
     this.callbacks.onReady = [function() {
+        alert('asd');
         $("#disqus_thread").css("height", "auto");
     }];
 }
