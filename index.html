@@ -19,14 +19,14 @@ layout: default
     </span>
 
     <h2>
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
     </h2>
 
     <div>
         {{ post.excerpt }}
     </div>
 
-    <span><i class="fa fa-fw fa-comment"></i>&nbsp;&nbsp;<strong><a href="{{ site.baseurl }}{{ post.url }}#disqus_thread">-</a></strong></span>
+    <span><i class="fa fa-fw fa-comment"></i>&nbsp;&nbsp;<strong><a href="{{ site.url }}{{ post.url }}#disqus_thread">-</a></strong></span>
 
 </article>
 {% endfor %}
@@ -37,11 +37,11 @@ layout: default
     {% if paginator.previous_page %}
     <li class="previous">
         {% if paginator.previous_page == 1 %}
-        <a href="{{ site.baseurl }}">
+        <a href="{{ site.url }}">
             <i class="fa fa-fw fa-chevron-left fa-2x"></i>
         </a>
         {% else %}
-        <a href="{{ site.baseurl }}/{{ site.paginate_path | replace: ':num', paginator.previous_page }}">
+        <a href="{{ site.url }}/{{ site.paginate_path | replace: ':num', paginator.previous_page }}">
             <i class="fa fa-fw fa-chevron-left fa-2x"></i>
         </a>
         {% endif %}
@@ -54,7 +54,7 @@ layout: default
 
     {% if paginator.next_page %}
     <li class="next">
-        <a href="{{ site.baseurl }}/{{ site.paginate_path | replace: ':num', paginator.next_page }}">
+        <a href="{{ site.url }}/{{ site.paginate_path | replace: ':num', paginator.next_page }}">
             <i class="fa fa-fw fa-chevron-right fa-2x"></i>
         </a>
     </li>
