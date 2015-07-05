@@ -34,7 +34,7 @@ layout: default
 
     {% if paginator.previous_page %}
     <li class="previous">
-        {% paginator.previous_page == 2 %}
+        {% if paginator.previous_page == 1 %}
         <a href="{{ site.baseurl }}">
             <i class="fa fa-fw fa-chevron-left fa-2x"></i>
         </a>
