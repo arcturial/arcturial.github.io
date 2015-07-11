@@ -30,6 +30,8 @@ npm install --save hubot-telegram
 
 This will download the source code and add it to your `package.json` file in the Hubot directory.
 
+**Note:** If Hubot is not available under `bin/hubot` you can try and run it from the Hubot folder with `./node_modules/.bin/hubot`.
+
 ## Running Hubot
 
 Now that you have everything configured and installed, you can start your [Hubot](https://hubot.github.com/docs/){:target="_blank"} instance with the following command:
@@ -39,9 +41,5 @@ TELEGRAM_TOKEN=<token> bin/hubot -a telegram -n botname
 {% endhighlight %}
 
 If everything has been configured correctly, the bot should start up and announce itself based on the name you gave it when you created it on [Telegram](https://www.telegram.org/){:target="_blank"}. To get started type **@botname help** in a chat with your bot, this will produce a list of available Hubot commands. You can add more commands to Hubot by following some of the instructions on [their site](https://hubot.github.com/docs/#scripts){:target="_blank"}.
-
-
-
-**Note:** If Hubot is not available under `bin/hubot` you can try and run it from the Hubot folder with `./node_modules/.bin/hubot`.
 
 **Note:** The **botname** you specify should be the same as your Telegram bot name for a consistent and predictable experience.
