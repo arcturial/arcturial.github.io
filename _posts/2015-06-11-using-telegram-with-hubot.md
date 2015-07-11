@@ -9,7 +9,7 @@ I recently collaborated on an adapter for [Hubot](https://hubot.github.com/){:ta
 
 ## Register A Bot With BotFather
 
-First thing you need is a [Telegram Bot](https://core.telegram.org/bots){:target="_blank"}, which you can easily register using their [BotFather](https://core.telegram.org/bots#botfather){:target="_blank"} application. All you need to do is follow the [BotFather](https://telegram.me/botfather){:target="_blank"} and add it to your Telegram application. You can create a new bot by typing **/newbot** and following the instructions, this will result in a **token** that you will use later.
+First thing you need is a [Telegram Bot](https://core.telegram.org/bots){:target="_blank"}, which you can easily register using their [BotFather](https://core.telegram.org/bots#botfather){:target="_blank"} application. You need to add the [BotFather](https://telegram.me/botfather){:target="_blank"} to your Telegram application and create a new bot by typing **/newbot** and following the instructions, this will result in a **token** that you will use later when executing your bot.
 
 ## Configure The Hubot Instance
 
