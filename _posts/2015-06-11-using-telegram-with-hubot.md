@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Using Telegram With Hubot
+redirect_from:
+    /2015/06/11/using-telegram-with-hubot.html
 ---
 
 [Telegram](https://www.telegram.org/){:target="_blank"} recently released a new [Bot API](https://core.telegram.org/bots/api){:target="_blank"}, which makes it relatively easy to integrate with applications like [GitHub Hubot](https://hubot.github.com/){:target="_blank"}.

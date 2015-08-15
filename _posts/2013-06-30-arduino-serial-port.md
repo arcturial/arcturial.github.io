@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Controlling a LED Using Arduino Serial Port
+redirect_from:
+    /2013/06/30/arduino-serial-port.html
 ---
 
 I recently started a project to build a remote control car powered by [Arduino](http://www.arduino.cc/) and [Raspberry PI](http://www.raspberrypi.org/). I will hopefully be publishing some more advanced [Arduino](http://www.arduino.cc/) tutorials soon, but first…let’s cover some basics. I don’t claim to be proficient in Arduino or C++, so any feedback is welcome in the comment section below.

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Behat Syntax Highlighter For Sublime Text
+redirect_from:
+    /2013/06/04/behat-syntax-highlighter.html
 ---
 
 I recently starting writing tests using [Behat](http://docs.behat.org/en/v2.5/) and had the problem that [Sublime Text 2](http://www.sublimetext.com/) did not have default functionality to help highlight my `.feature` tests (having everything display white on black can get tedious fast).

@@ -2,6 +2,8 @@
 layout: post
 title: Design Pattern - PHP Event Dispatcher
 old_url: http://www.cainsvault.com/design-pattern-php-event-dispatcher/
+redirect_from:
+    /2013/06/22/design-pattern-event-dispatcher.html
 ---
 
 Almost every time the topic of events in PHP comes up, the responses I usually get tend to be in the direction of “PHP doesn’t have real events”, “PHP executes synchronously, how can it use events” etc. Although there are some truth to these statements, events doesn’t have to by asynchronous or non-blocking. Events are defined as **“something that happens”**. So if you are uncomfortable with calling them events, just call them **“hooks”**.

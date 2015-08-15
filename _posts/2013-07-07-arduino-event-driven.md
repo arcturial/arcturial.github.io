@@ -2,6 +2,8 @@
 layout: post
 title: Arduino Event-Driven Development
 old_url: http://www.cainsvault.com/arduino-event-driven-development/
+redirect_from:
+    /2013/07/07/arduino-event-driven.html
 ---
 
 First off, I only recently started experimenting with Arduino and C++. For the last couple of years I have been mostly involved with languages such as PHP, so it’s a rather big change going from a dynamic language to a structured language such as C++.

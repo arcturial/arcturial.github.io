@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Construct 2 Sprite Factory Plugin
+redirect_from:
+    /2013/10/20/construct-sprite-plugin.html
 ---
 
 I am creating a platform shooter game in Construct 2 and realized that if I want multiple bullet types to spawn based on power-ups, I would have to create quite an elaborate IF statement and sub conditions to spawn the right bullet type based on my current power-up status. I thought it would be much easier to use if I had some sort of **BulletFactory** and instead of spawning the actual **BulletType**, I can instead spawn the instance of the factory and the factory would be aware of which object it’s currently representing. As an example, without this factory plugin. My event sheet would look similar to the image below.
